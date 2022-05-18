@@ -1,0 +1,69 @@
+<head>
+
+<style>
+    .header {
+        background-color: red;
+        color: white;
+        height: 1rem;
+        left: 0;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        /* z-index: 1; */
+    }
+    .body {
+        margin-top: 3.5rem;
+        text-align: center;
+    }
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 5;
+    }
+
+    .filler {
+        font-size: 5em;
+    }
+
+    .modal-text {
+        border: 5px solid blue;
+        background-color: green;
+        border-radius: 20px;
+        padding: 50px;
+        color: gold;
+        font-size: 3rem;
+        position: absolute;
+        top: 30%;;
+        left: calc(50% - 500px);
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <p class="modal-text">
+            A MODAL SHOWING ON TOP OF THE PAGE<br>
+            Play with the z-index
+        </p>
+    </div>
+    <div class="container">
+    <div class="header">Header (try to highlight me)</div>
+    <div class="body">
+        Now uncomment line 26 and try to highlight the text again
+    </div>
+    <div class="filler">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis illum ipsam eligendi facere perspiciatis soluta esse mollitia reiciendis pariatur quae placeat voluptate amet, qui totam sunt doloribus maiores possimus iste?
+        Quos nemo laborum repellat pariatur rem. Quas consequuntur obcaecati minus perferendis aperiam? Excepturi, vitae. Exercitationem, eius reiciendis. Corporis tenetur ducimus laboriosam sint nobis magni corrupti ad possimus velit. Voluptas, ratione?
+        Recusandae quia, excepturi nobis officiis magnam beatae perferendis sunt porro, dolorem voluptatem quibusdam commodi nesciunt in itaque architecto omnis mollitia reprehenderit rem placeat obcaecati, nam animi cupiditate. Dolorem, quod ducimus.
+        Similique cupiditate asperiores soluta, nihil reiciendis expedita culpa doloribus. Ipsum quis iusto minima veritatis optio quidem blanditiis nobis unde, repellat aut. Cum quia dolore dicta? Eos consectetur sequi necessitatibus magni.
+        Explicabo mollitia corrupti assumenda dicta doloremque consequuntur quod quae, voluptate possimus amet libero facilis unde. Magni error placeat autem, amet cumque animi possimus voluptatibus dicta porro et, officiis cupiditate quod.
+    </div>
+    </div>
+
+</body>
