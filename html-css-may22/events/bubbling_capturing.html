@@ -1,0 +1,31 @@
+<head>
+    <link href="./bubbling_capturing.css" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <div>
+            <p>I am the innermost element</p>
+        </div>
+    </form>
+
+    <script>
+        const form = document.querySelector('form');
+        const div = document.querySelector('div');
+        const p = document.querySelector('p');
+
+        const handler = (e) => {
+            const {target, currentTarget} = e;
+            alert(`cliked the ${target.tagName}. Triggered by the ${currentTarget.tagName}`);
+
+        }
+
+        // p.addEventListener("click", (e) => handler(e), true) // capture phase
+        // div.addEventListener("click", (e) => handler(e), true)
+        // form.addEventListener("click", (e) => handler(e), true)
+        p.addEventListener("click", (e) => handler(e)) // bubble phase
+        // p.addEventListener("click", (e) => alert('Im a second event listener on the P tag')) // bubble phase
+        div.addEventListener("click", (e) => handler(e))
+        form.addEventListener("click", (e) => handler(e) )
+
+    </script>
+</body>
